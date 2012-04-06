@@ -249,6 +249,8 @@ NSArray* keyStringTokeyArray(NSString* string)
 {
     [inputBuffer release];
     for (int i = 0; i < VimModeCount; ++i) { [handlers[i] release]; }
+    
+    [super dealloc];
 }
 
 -(NSString*) yankContent:(BOOL*)isWholeLine 

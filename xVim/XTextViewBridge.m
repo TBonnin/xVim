@@ -30,14 +30,21 @@
     if (self = [super initWithFrame:frame])
     {
         [self setDelegate:self];
+        [super setBackgroundColor:kCommandLineMainBackgroudColor];
     }
     return self;
 }
 
 -(BOOL) acceptsFirstResponder { return self.canIHaveFocus; }
 -(void) mouseDown:(NSEvent*) theEvent { if (self.canIHaveFocus) { [super mouseDown:theEvent]; } }
--(void) dealloc  { DLog(@"Deallocing XCmdlineTextField: %@", self); }
--(void) finalize { DLog(@"XCmdlineTextField Finalized"); }
+-(void) dealloc  { 
+    DLog(@"Deallocing XCmdlineTextField: %@", self); 
+    [super dealloc];
+}
+-(void) finalize { 
+    DLog(@"XCmdlineTextField Finalized"); 
+    [super finalize];
+}
 
 -(void) setFocus:(id<XCmdlineDelegate>)delegate withText:(NSString *)str
 {
@@ -152,6 +159,7 @@
     DLog(@"Deallocing XTexViewBridge: %@", self); 
     [controller release]; 
     [cmdline release];
+    [super dealloc];
 }
 -(void) finalize { DLog(@"XTextViewBridge Finalized"); [super finalize]; }
 -(void) processKeyEvent:(NSEvent*)event { [controller processKeyEvent:event]; }
