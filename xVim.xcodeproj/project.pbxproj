@@ -31,7 +31,6 @@
 		A5929E4714A428C0009AFACA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CE20F148F640100A06106 /* Cocoa.framework */; };
 		A5929E4914A428C0009AFACA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A56CE218148F640100A06106 /* InfoPlist.strings */; };
 		A5929E4B14A428C0009AFACA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A504A451149DF9F40084C754 /* README.md */; };
-		A5929E4C14A428C0009AFACA /* keymap in Resources */ = {isa = PBXBuildFile; fileRef = A55056BD14A19B4300067686 /* keymap */; };
 		A598ED54148F798900C86EC9 /* xVim.xcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = A56CE20C148F640100A06106 /* xVim.xcplugin */; };
 		A5A905CC149C41C000810962 /* XGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A905CB149C41C000810962 /* XGlobal.m */; };
 		A5AE52F315031F6600D032E7 /* XVimController.m in Sources */ = {isa = PBXBuildFile; fileRef = A543C399148FBBB10070E986 /* XVimController.m */; };
@@ -55,6 +54,9 @@
 		A5C799F714FBDC2A008C1B8A /* XVimExMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DFE68314FBC86300FE9E1E /* XVimExMode.m */; };
 		A5C799F814FBDC2A008C1B8A /* XClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7988214F74F8100D94865 /* XClient.m */; };
 		A5DD1A96149DD112000AAE3D /* XVimMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DD1A95149DD112000AAE3D /* XVimMode.m */; };
+		E91F6B06152F33DC00E27954 /* keymap in Resources */ = {isa = PBXBuildFile; fileRef = A55056BD14A19B4300067686 /* keymap */; };
+		E91F6B07152F33DD00E27954 /* keymap in Resources */ = {isa = PBXBuildFile; fileRef = A55056BD14A19B4300067686 /* keymap */; };
+		E94CE881152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E94CE880152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -345,6 +347,7 @@
 				A56CE21A148F640100A06106 /* InfoPlist.strings in Resources */,
 				A52E943B1499A95F00FA6045 /* keymap-example in Resources */,
 				A504A452149DF9F40084C754 /* README.md in Resources */,
+				E91F6B07152F33DD00E27954 /* keymap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +357,6 @@
 			files = (
 				A5929E4914A428C0009AFACA /* InfoPlist.strings in Resources */,
 				A5929E4B14A428C0009AFACA /* README.md in Resources */,
-				A5929E4C14A428C0009AFACA /* keymap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +367,7 @@
 				A5AE530115031F6600D032E7 /* InfoPlist.strings in Resources */,
 				A5AE530215031F6600D032E7 /* keymap-example in Resources */,
 				A5AE530315031F6600D032E7 /* README.md in Resources */,
+				E91F6B06152F33DC00E27954 /* keymap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
