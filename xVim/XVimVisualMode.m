@@ -39,6 +39,8 @@
     return isLineMode ? @"-- VisualLine --  " : @"-- Visual --  ";
 }
 
+-(NSColor*) backgroundColor { return kCommandLineMainBackgroudColor; };
+
 -(NSRange) linewiseRange
 {
     NSInteger start, end;
@@ -334,6 +336,7 @@
                 isLineMode = NO;
                 [hijackedView setSelectedRange:[self characterwiseRange]];
                 [[controller bridge].cmdline setTitle:[self name]];
+                [[controller bridge].cmdline setBackgroundColor:[self backgroundColor]];
             }
             break;
         case 'V':
@@ -343,6 +346,7 @@
                 isLineMode = YES;
                 [hijackedView setSelectedRange:[self linewiseRange]];
                 [[controller bridge].cmdline setTitle:[self name]];
+                [[controller bridge].cmdline setBackgroundColor:[self backgroundColor]];
             }
             break;
         case 'r':

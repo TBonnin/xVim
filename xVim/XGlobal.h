@@ -53,3 +53,7 @@ void configureInsertionPointRect(XTextViewBridge* bridge, NSTextView* view, NSRe
 typedef void (*O_KeyDown) (void*, SEL, NSEvent*);
 O_KeyDown orig_keyDown;
 // --------------------
+
+// CommandLine Background Colors
+#define kCommandLineMainBackgroudColor NSColorFromRGB(0x9ABD00)
+#define kCommandLineInsertBackgroudColor NSColorFromRGB(0x0087AF)

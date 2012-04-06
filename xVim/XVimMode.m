@@ -36,6 +36,7 @@
 -(BOOL) forceIgnoreKeymap { return NO; }
 -(NSArray*) selectionChangedFrom:(NSArray*)oldRanges to:(NSArray*)newRanges { return newRanges; }
 -(NSString*) name { return @""; }
+-(NSColor*) backgroundColor { return kCommandLineMainBackgroudColor; };
 
 -(void) scrollViewRectToVisible:(NSRect)visibleRect
 {
@@ -97,6 +98,8 @@
 }
 
 -(NSString*) name { return @"-- Replace --"; }
+
+-(NSColor*) backgroundColor { return kCommandLineMainBackgroudColor; };
 
 -(BOOL) processKey:(unichar)key modifiers:(NSUInteger)flags
 {

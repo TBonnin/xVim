@@ -125,6 +125,8 @@
 		A5BD0F33149C598F0089BF5E /* vim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vim.m; sourceTree = "<group>"; };
 		A5DD1A95149DD112000AAE3D /* XVimMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XVimMode.m; sourceTree = "<group>"; };
 		A5FA0F9A149AF56B0020C76A /* XVimMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XVimMode.h; sourceTree = "<group>"; };
+		E94CE87F152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ContrastingLabelExtensions.h"; sourceTree = "<group>"; };
+		E94CE880152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ContrastingLabelExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,8 @@
 				A520764E14B0AB44005B8077 /* XVimVisualMode.m */,
 				75DFE68314FBC86300FE9E1E /* XVimExMode.m */,
 				75E7988214F74F8100D94865 /* XClient.m */,
+				E94CE87F152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.h */,
+				E94CE880152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -470,6 +474,7 @@
 				75E7988414F7503700D94865 /* XClient.m in Sources */,
 				75DFE68414FBC86300FE9E1E /* XVimExMode.m in Sources */,
 				A516505E14FCC1D7004E804D /* XTextViewBridge.m in Sources */,
+				E94CE881152F30EA00E29E9D /* NSColor+ContrastingLabelExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

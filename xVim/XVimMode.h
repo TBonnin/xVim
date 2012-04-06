@@ -35,6 +35,7 @@
 -(BOOL) forceIgnoreKeymap;
 
 -(NSString*) name;
+-(NSColor*) backgroundColor;
 @end
 
 

@@ -10,6 +10,7 @@
 #import "XTextViewBridge.h"
 #import "XVimController.h"
 #import "XVimMode.h"
+#import "NSColor+ContrastingLabelExtensions.h"
 
 @interface XCmdlineTextField()
 {
@@ -106,6 +107,12 @@
 {
     [super setStringValue:[NSString stringWithFormat:@"%@%@", title, aString]];
 }
+
+- (void)setBackgroundColor:(NSColor *)color {
+    [super setBackgroundColor:color];
+    [self setTextColor:[color contrastingLabelColor]];
+}
+
 @end
 
 
@@ -125,6 +132,7 @@
 {
     cmdline = c;
     [cmdline setTitle:[[controller currentHandler] name]];
+    [cmdline setBackgroundColor:[[controller currentHandler] backgroundColor]];
 }
 
 -(NSTextView*)     targetView    { return targetView; }

@@ -279,6 +279,7 @@ NSArray* keyStringTokeyArray(NSString* string)
     if (vi_mode == mode) { return; }
     
     [bridge.cmdline setTitle:[handlers[mode] name]];
+    [bridge.cmdline setBackgroundColor:[handlers[mode] backgroundColor]];
     
     if (mode == ExMode) {
         // ExMode is not a proper mode as such, since the current mode remains active

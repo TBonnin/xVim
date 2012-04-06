@@ -113,6 +113,8 @@ typedef enum e_affect_range
 
 -(NSString*) name { return @"-- Normal --  "; }
 
+-(NSColor*) backgroundColor { return kCommandLineMainBackgroudColor; };
+
 -(NSArray*) selectionChangedFrom:(NSArray*)oldRanges to:(NSArray*)newRanges
 {
     if (dontCheckTrailingCR == YES) { return newRanges; }

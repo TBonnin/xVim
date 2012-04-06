@@ -11,6 +11,9 @@
 
 @implementation XVimInsertModeHandler
 -(NSString*) name { return @"-- Insert --"; }
+
+-(NSColor*) backgroundColor { return kCommandLineInsertBackgroudColor; };
+
 -(BOOL) processKey:(unichar)key modifiers:(NSUInteger)flags
 {
     // Ctrl + u : delete line before // a CR/LF is consider a line.

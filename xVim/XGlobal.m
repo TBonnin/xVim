@@ -410,9 +410,6 @@ void hj_didAddSubview(NSView* self, SEL sel, NSView* view)
         
         [parent addSubview:tf];
         [self setFrame:NSMakeRect(0, tfHeight, pSize.width, pSize.height - tfHeight)];
-        
-        [tf setBackgroundColor:[tv backgroundColor]];
-        [tf setTextColor:[tv textColor]];
         [tf setFont:font];
         [tf setBezeled:NO];
         [[tf cell] setSendsActionOnEndEditing:YES];
